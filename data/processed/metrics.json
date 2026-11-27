@@ -1,0 +1,19 @@
+{
+ "svc_rows": 174983,
+ "providers": 26679,
+ "total_paid_prov": 3400894849.360015,
+ "sbmtd": 7906261009.720793,
+ "allowed": 2740957505.3395305,
+ "paid": 2141933447.0997746,
+ "prov_paid": 3400894849.360015,
+ "prov_paid_in_svc": 2571310242.850006,
+ "svc_paid_total": 2141933447.0997746,
+ "npis_no_service_rows": 7447,
+ "q4_cover_pct": 0.6298146640737353,
+ "q3_top_excess": 84256916.0,
+ "q5_rows": 73,
+ "q6_matches": 3,
+ "q6_paid": 280808.0,
+ "q7_min_ratio": 0.036,
+ "inp_ratio_overall": 0.1654413568489158
+}
