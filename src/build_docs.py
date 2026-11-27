@@ -37,9 +37,9 @@ Nationally, Medicare paid {M['inp_ratio_overall']:.0%} of covered charges across
 Maryland only for the service-level file, one year, no claim-level data, so duplicate-claim and date-of-death checks need claim files this data does not have. With real claim-level data I would add duplicate detection, overlapping-stay checks and a recovery estimate.
 """
 open("docs/findings.md","w").write(F)
-R = f"""# Healthcare Payments Leakage
+R = f"""# Healthcare Payments Analysis
 
-Where does healthcare money leak? A SQL and Python analysis of real, public Medicare payment data and the federal exclusion list.
+How do Medicare dollars move from charges to payments? A SQL and Python analysis of real, public Medicare payment data and the federal exclusion list.
 
 ![Charge vs payment gap by specialty](dashboard/img/q1_gap_by_specialty.png)
 
