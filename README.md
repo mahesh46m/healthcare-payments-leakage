@@ -1,6 +1,6 @@
-# Healthcare Payments Leakage
+# Healthcare Payments Analysis
 
-Where does healthcare money leak? A SQL and Python analysis of real, public Medicare payment data and the federal exclusion list.
+How do Medicare dollars move from charges to payments? A SQL and Python analysis of real, public Medicare payment data and the federal exclusion list.
 
 ![Charge vs payment gap by specialty](dashboard/img/q1_gap_by_specialty.png)
 
