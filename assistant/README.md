@@ -1,5 +1,7 @@
 # Ask the data: a small Medicare analytics assistant
 
+**Live demo:** https://medicare-payments-assistant.streamlit.app/ (Streamlit Community Cloud, deterministic offline mode, no API keys).
+
 A question-answering layer over the real CMS data in this repo. You ask a
 question in plain English; the assistant answers through a small set of
 allowlisted, read-only query functions, and every answer comes back with the
