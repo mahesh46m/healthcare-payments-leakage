@@ -1,0 +1,5 @@
+duckdb
+pandas
+streamlit
+# optional, only for LLM mode (OPENAI_API_KEY):
+# openai
