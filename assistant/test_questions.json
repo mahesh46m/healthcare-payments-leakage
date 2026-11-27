@@ -1,0 +1,22 @@
+[
+ {"q": "How much did Medicare pay Maryland providers in 2024 overall?", "expect_fn": "dataset_totals"},
+ {"q": "What were total submitted charges versus what Medicare paid?", "expect_fn": "dataset_totals"},
+ {"q": "Which specialties have the biggest gap between submitted charges and payments?", "expect_fn": "paid_vs_submitted_by_specialty"},
+ {"q": "Show me paid versus submitted charges for Cardiology.", "expect_fn": "paid_vs_submitted_by_specialty", "expect_params": {"specialty": "Cardiology"}},
+ {"q": "What share of submitted charges does Medicare actually pay, by specialty?", "expect_fn": "paid_vs_submitted_by_specialty"},
+ {"q": "Which procedure codes have the largest charge-to-payment gap?", "expect_fn": "largest_gap_codes"},
+ {"q": "Top 5 HCPCS codes by dollar gap.", "expect_fn": "largest_gap_codes", "expect_params": {"limit": 5}},
+ {"q": "Which providers are paid far above their specialty peers?", "expect_fn": "provider_outliers_vs_peers"},
+ {"q": "Any doctor outliers I should put on a review list?", "expect_fn": "provider_outliers_vs_peers"},
+ {"q": "Do the service-level numbers reconcile to the provider totals?", "expect_fn": "reconciliation_summary"},
+ {"q": "How much of the provider summary is covered by the detail file?", "expect_fn": "reconciliation_summary"},
+ {"q": "Which providers show implausibly high daily service volume?", "expect_fn": "high_volume_services"},
+ {"q": "Flag any impossible-looking billing volumes for review.", "expect_fn": "high_volume_services"},
+ {"q": "Are any paid providers on the OIG exclusion list?", "expect_fn": "exclusion_list_matches"},
+ {"q": "Did Medicare pay anyone excluded from federal healthcare programs?", "expect_fn": "exclusion_list_matches"},
+ {"q": "Which hospitals have the lowest payment-to-charge ratio?", "expect_fn": "hospital_payment_ratios"},
+ {"q": "Show hospitals where Medicare pays the most relative to charges.", "expect_fn": "hospital_payment_ratios", "expect_params": {"order": "highest"}},
+ {"q": "What does paid ratio mean exactly?", "expect_fn": "metric_definitions"},
+ {"q": "Define the robust z-score you use for outliers.", "expect_fn": "metric_definitions"},
+ {"q": "What's the weather in Baltimore today?", "expect_fn": null}
+]
