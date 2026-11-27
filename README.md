@@ -43,6 +43,9 @@ python src/download.py
 python src/analyze.py
 ```
 
+## Ask the data
+`assistant/` adds a small question-answering layer on top of this data: a Streamlit page where an LLM (or an offline keyword router) answers only through allowlisted read-only query functions, with metric definitions and caveats attached to every answer. Includes a 20-question test set with measured results. See `assistant/README.md`.
+
 ## Limitations
 One state and one year for physician data. Aggregated data, so no duplicate-claim or date-of-death checks. Flags are screening leads and not accusations.
 
