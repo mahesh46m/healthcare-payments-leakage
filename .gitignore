@@ -1,0 +1,8 @@
+data/raw/
+__pycache__/
+*.parquet
+# provider-level (NPI) review lists are not published
+data/processed/q3.csv
+data/processed/q4.csv
+data/processed/q5.csv
+data/processed/q6.csv
