@@ -39,6 +39,18 @@ metric definitions and caveats attached.
 ```bash
 python src/download.py            # fetch the real public data (resumable)
 python assistant/build_db.py      # build assistant/medicare.duckdb
+```
+
+For a quick start (and for the hosted demo), the app restores
+`medicare.duckdb` automatically on first run when it is missing: from a local
+`assistant/medicare.duckdb.gz` if present, otherwise by downloading the public
+snapshot attached to this repo's
+[`data-snapshot-2026-11` release](https://github.com/mahesh46m/healthcare-payments-analysis/releases/tag/data-snapshot-2026-11).
+That snapshot is a gzip-compressed build of the same public data; no CMS
+download is needed to try the app. The raw CSVs are still not committed;
+`build_db.py` remains the way to rebuild from source.
+
+```bash
 streamlit run assistant/app.py    # open the page
 ```
 
