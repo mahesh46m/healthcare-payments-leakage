@@ -44,6 +44,8 @@ python src/analyze.py
 ```
 
 ## Ask the data
+**Live demo:** https://medicare-payments-assistant.streamlit.app/ (free Streamlit Community Cloud deploy, deterministic offline mode, no API keys). The 28MB DuckDB snapshot auto-downloads on first run from the repo's `data-snapshot-2026-11` release asset.
+
 `assistant/` adds a small question-answering layer on top of this data: a Streamlit page where an LLM (or an offline keyword router) answers only through allowlisted read-only query functions, with metric definitions and caveats attached to every answer. Includes a 20-question test set with measured results. See `assistant/README.md`.
 
 ## Limitations
